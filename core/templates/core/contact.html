@@ -1,0 +1,384 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home || animart pet shop, pet shitter, pet food, pet care Bootstrap 4 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <link rel="shortcut icon" href="{% static 'core/img/favicon.png' %}">
+	<!-- icofont css -->
+    <link rel="stylesheet" href="{% static 'core/css/icofont.css' %}">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{% static 'core/css/animate.css' %}">
+    <!-- Nice select css -->
+    <link rel="stylesheet" href="{% static 'core/css/nice-select.css' %}">
+    <!-- Jquery fancybox css -->
+    <link rel="stylesheet" href="{% static 'core/css/jquery.fancybox.css' %}">
+    <!-- Jquery ui price slider css -->
+    <link rel="stylesheet" href="{% static 'core/css/jquery-ui.min.css' %}">
+    <!-- Meanmenu css -->
+    <link rel="stylesheet" href="{% static 'core/css/meanmenu.min.css' %}">
+	<!-- Slick carousel css -->
+    <link rel="stylesheet" href="{% static 'core/css/slick-slider.css' %}">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="{% static 'core/css/default.css' %}">
+	<!-- Plugins css -->
+    <link rel="stylesheet" href="{% static 'core/css/plugins.css' %}">
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'core/css/responsive.css' %}">
+    
+
+    <!-- Modernizer js -->
+    <script src="{% static 'core/js/vendor/modernizr-3.5.0.min.js'%}"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+    <!-- Main Wrapper Start Here -->
+    <div class="wrapper">
+		
+        <!-- Header Area Start Here -->
+        <header class="header-area header-style-four header-sticky">
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <!-- Logo Start -->
+                    <div class="col-xl-2 col-lg-2 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{% static 'core/img/logo/logo2.png'%}" alt="logo-image">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Logo End -->
+   
+					<div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                        <nav>
+                            <ul class="header-menu-list text-center">
+                                <li><a href="{% url 'index' %}">Inicio</a></li>
+								<li><a href="{% url 'shop'%}">Tienda</a></li>							
+                                <li><a href="{% url 'about'%}">Nosotros</a></li>
+								<li><a href="{% url 'contact'%}">Contactanos</a></li>
+								<li><a href="{% url 'login'%}">Iniciar Sesion</a></li>
+								<li><a href="{% url 'register'%}">Registrar</a></li>
+                            </ul>
+							
+
+
+						</nav>
+                    </div>
+   
+                    <!-- Cart Box Start Here -->
+                    <div class="col-xl-2 col-lg-2 col-6">
+                        <div class="cart-box">
+                            <ul>
+
+                                <li class="drodown-show">
+                                    <a href="#"><span class="icofont-cart-alt"></span><span class="total-pro">2</span></a>
+                                    <ul class="dropdown cart-box-width">
+                                            <li>
+                                                <!-- Cart Box Start -->
+                                                <div class="single-cart-box">
+                                                    <div class="cart-img">
+                                                        <a href="#">
+                                                            <img src="img/products/p1.jpg" alt="cart-image">
+                                                        </a>
+                                                    </div>
+                                                    <div class="cart-content">
+                                                        <h6>
+                                                            <a href="product-details.html">Product Title Here 1</a>
+                                                        </h6>
+														<span>M, Red</span>
+                                                        <span class="cart-price">35.00 x 1</span>  
+                                                    </div>
+                                                    <a class="del-icone" href="#">
+                                                        <i class="ion-close"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- Cart Box End -->
+                                                <!-- Cart Box Start -->
+                                                <div class="single-cart-box">
+                                                    <div class="cart-img">
+                                                        <a href="#">
+                                                            <img src="img/products/p2.jpg" alt="cart-image">
+                                                        </a>
+                                                    </div>
+                                                    <div class="cart-content">
+                                                        <h6>
+                                                            <a href="product-details.html">Product Title Here 2</a>
+                                                        </h6>
+														<span>L, White</span>
+                                                        <span class="cart-price">22.00 x 1</span>
+                                                    </div>
+                                                    <a class="del-icone" href="#">
+                                                        <i class="ion-close"></i>
+                                                    </a>
+                                                </div>
+                                                <!-- Cart Box End -->
+                                                <!-- Cart Footer Inner Start -->
+                                                <div class="cart-footer">
+                                                    <ul class="price-content">
+                                                        <li>Subtotal
+                                                            <span>$85.00</span>
+                                                        </li>
+                                                        <li>Shipping
+                                                            <span>$5.50</span>
+                                                        </li>
+                                                        <li>Total
+                                                            <span>$90.50</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="cart-actions text-center">
+                                                        <a class="cart-checkout" href="checkout.html">Checkout</a>
+                                                        <a class="cart-checkout" href="cart.html">View Cart</a>
+                                                    </div>
+                                                </div>
+                                                <!-- Cart Footer Inner End -->
+                                            </li>
+                                        </ul>
+                                </li>
+                                    <ul class="dropdown cart-box-width currency-selector">
+                                        <li>
+											<div class="single-select-block">
+											 <h3>My Account</h3>
+												<select>
+													<option value="1">Register</option>
+													<option value="2">Login</option>
+													<option value="3">My Account</option>
+												</select>
+											</div>
+                                        </li>
+                                    </ul>
+                                    <!-- Currency & Language Selection End -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Cart Box End Here -->
+                </div>
+				<!-- Row End -->
+				
+                <!-- Mobile Menu Start Here -->
+                <div class="mobile-menu d-block d-lg-none">
+                    <nav>
+						<ul class="header-menu-list text-center">
+							<li><a href="{% url 'index' %}">Inicio</a></li>
+							<li><a href="{% url 'shop'%}">Tienda</a></li>							
+							<li><a href="{% url 'about'%}">Nosotros</a></li>
+							<li><a href="{% url 'contact'%}">Contactanos</a></li>
+						</ul>
+                    </nav>
+                </div>
+				<!-- Mobile Menu End Here -->
+
+            </div>
+            <!-- Container End -->
+        </header>
+        <!-- Header Area End Here -->
+        <!-- Google Map Start -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1661.993286942016!2d-71.60959481314761!3d-33.57969785491169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662384f8f4bbf1b%3A0x6e48c531c053034e!2sFrancisco%20Javier%20Fuenzalida%20Rodr%C3%ADguez!5e0!3m2!1ses-419!2scl!4v1627016714958!5m2!1ses-419!2scl" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            <div id="map"></div>
+        </div>
+        <!-- Google Map End -->
+		
+        <!-- Regester Page Start Here -->
+        <div class="register-area adp_top adp_bottom">
+		    <div class="container">
+		        <div class="row">
+				
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="area-details">
+                            <ul>
+                                <li class="single-quick-contact">
+                                    <h5>Numero de Contacto</h5>
+                                    <p>
+                                        <a>+569 48573573</a>
+                                    </p>
+                                </li>
+                                <li class="single-quick-contact">
+                                    <h5>Correo de contacto</h5>
+                                    <p>
+                                        <a>alanbrit.store@gmail.com</a>
+                                        <a">bray.pardo@duocuc.cl</a>
+                                    </p>
+                                </li>
+                                <li class="single-quick-contact">
+                                    <h5>Lugar de encuentro</h5>
+                                    <p>San antonio, centenario 2209</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+				
+		            <div class="col-lg-9 col-md-8 col-12">
+                        <div class="contact_wrapper clearfix">
+									<div class="small-title">
+										<h3>Mensaje</h3>
+										<p>aqui podras enviar un mensaje de contacto directo a nuestros administradores</p>
+									</div>
+                            <form id="contact-form" class="contact-form" action="mail.php" method="post">
+                                <div class="address-wrapper row">
+                                    <div class="col-md-12">
+                                        <div class="address-fname">
+                                            <input class="form-control" type="text" name="name" placeholder="Nombre">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="address-email">
+                                            <input class="form-control" type="email" name="email" placeholder="Correo">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="address-subject">
+                                            <input class="form-control" type="text" name="subject" placeholder="Asunto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="address-textarea">
+                                            <textarea name="message" class="form-control" placeholder="Mensaje"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-content mail-content clearfix">
+                                    <div class="send-email float-md-right">
+                                        <button type="submit" class="login-btn">Enviar</button>
+                                    </div>
+                                </div>
+                                <p class="form-message"></p>
+                            </form>
+                        </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+        <!-- Register Page End Here -->
+		
+		<!-- Footer Area Start Here -->
+        <footer>
+            <div class="footer_area_wrapper footer_color_bg" style="background-color:#361d1d">
+                <div class="container">
+                    <!-- Footer Middle Start -->
+                    <div class="footer-top adp_top adp_bottom">
+                        <div class="row">
+                        
+                            <!-- Single Footer Start -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer_widget">
+                                    <h4 class="footer-title">Contactanos</h4>
+                                    <div class="footer-content">
+                                        <ul class="footer_contact">
+                                            <li><i class="icofont-home"></i><span>Direccion :</span>  Aromo 2209</li>
+                                            <li><i class="icofont-ui-dial-phone"></i><span>Celular :</span> +569 48573573</li>
+                                            <li><i class="icofont-email"></i><span>Correo :</span> alanbrito.store@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Footer Start -->
+                            
+                            <!-- Single Footer Start -->
+                            <div class="col-lg-2 col-md-6">
+                                <div class="footer_widget">
+                                        <h4 class="footer-title">Infomacion</h4>
+                                        <div class="footer-content">
+                                            <ul class="footer-list">
+                                                <li><a href="">About Us</a></li>
+                                                <li><a href="">Contact Us</a></li>
+                                                <li><a href="">Privacy Policy</a></li>
+                                                <li><a href="">Terms & Conditions</a></li>
+                                                <li><a href="">Shipping Policies</a></li>
+                                                <li><a href="">Term & Conditions</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- Single Footer Start -->
+                            
+                            <!-- Single Footer Start -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer_widget">
+                                        <h4 class="footer-title">Instagram Gallery</h4>
+                                        <div class="footer-content">
+                                           <ul class="instagram-img">
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_1.jpg"><img src="img/portfolio/inst_port_1.jpg" alt="instagram-img"></a></li>
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_2.jpg"><img src="img/portfolio/inst_port_2.jpg" alt="instagram-img"></a></li>
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_3.jpg"><img src="img/portfolio/inst_port_3.jpg" alt="instagram-img"></a></li>
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_4.jpg"><img src="img/portfolio/inst_port_4.jpg" alt="instagram-img"></a></li>
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_5.jpg"><img src="img/portfolio/inst_port_5.jpg" alt="instagram-img"></a></li>
+                                               <li><a class="img-popup" href="img/portfolio/inst_port_6.jpg"><img src="img/portfolio/inst_port_6.jpg" alt="instagram-img"></a></li>
+                                           </ul>  
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Single Footer Start -->
+                            
+                            <!-- Single Footer Start -->
+                            <!-- Single Footer Start -->
+                            
+                        </div>
+                        <!-- Row End -->
+                    </div>
+                    <!-- Footer Middle End -->
+                </div>
+                <!-- Footer Bottom Start -->
+                <div class="footer-bottom ">
+                   <div class="container">
+                       <div class="row align-items-center">
+                           <div class="col-md-4">
+                               <div class="footer-copyright ">
+                                    <p>Copyright @ <a href="#">Animart </a> All Rights Reserved</p>
+                                </div>
+                           </div>
+    
+                           <div class="col-md-4">
+                               <div class="footer-bottom-right text-center">
+                                    <ul class="footer-social-icon ">
+                                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                        <li><a href="#"><i class="icofont-brand-youtube"></i></a></li>
+                                        <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <!-- Footer Bottom End -->
+            </div>
+        </footer>
+    </div>
+    <!-- Main Wrapper End Here -->
+	
+	
+    <!-- jquery 3.3.1 -->
+    <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Mobile menu js -->
+    <script src="{% static 'core/js/jquery.meanmenu.min.js' %}"></script>
+    <!-- ScrollUp js -->
+    <script src="{% static 'core/js/jquery.scrollUp.js' %}"></script>
+    <!-- Jquery nice select js -->
+    <script src="{% static 'core/js/jquery.nice-select.min.js' %}"></script>
+    <!-- Jquery ui price slider js -->
+    <script src="{% static 'core/js/jquery-ui.min.js'%}"></script>
+    <!-- Bootstrap popper js -->
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <!-- Plugin js -->
+    <script src="{% static 'core/js/plugin.js' %}"></script>
+    <!-- Main activaion js -->
+    <script src="{% static 'core/js/main.js' %}"></script>
+
+</body>
+
+</html>
