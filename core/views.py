@@ -18,3 +18,6 @@ def login(request):
 
 def register(request):
     return render(request, 'core/register.html')
+
+def cart(request):
+    return render(request, 'core/cart.html')
