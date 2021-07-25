@@ -50,7 +50,7 @@
                     <!-- Logo Start -->
                     <div class="col-xl-2 col-lg-2 col-6">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{% url 'index' %}">
                                 <img src="{% static 'core/img/logo/logo2.png'%}" alt="logo-image">
                             </a>
                         </div>
@@ -79,7 +79,7 @@
                             <ul>
 
                                 <li class="drodown-show">
-                                    <a href="#"><span class="icofont-cart-alt"></span><span class="total-pro">2</span></a>
+                                    <a href="{% url 'cart' %}"><span class="icofont-cart-alt"></span><span class="total-pro">2</span></a>
                                     <ul class="dropdown cart-box-width">
                                             <li>
                                                 <!-- Cart Box Start -->
@@ -203,8 +203,8 @@
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
+														<i class="icofont-ui-rating"></i>
 													</div>
 															
 													<ul class="small-list-icons">
@@ -224,10 +224,9 @@
 														</a>
 													</div>
 													<div class="small-list-content">
-													<h3 class="small-list-title"> <a href="single-product.html">Small Product Title Here</a></h3>
+													<h3 class="small-list-title"> <a href="single-product.html">Correa ajustable</a></h3>
 													<p class="small-list-price">
-														<span class="regular-price">$150.00</span> 
-														<span class="dis-price">$200.00</span>
+														<span class="regular-price">$7.990</span>	
 													</p>
 															
 													<div class="product-rating">
@@ -239,12 +238,7 @@
 													</div>
 															
 													<ul class="small-list-icons">
-														<li><a class="grid_compare" href="compare.html" title="" data-original-title="Compare" tabindex="0"><i class="icofont-random"></i></a></li>
-														<li><a class="grid_cart" href="cart.html" title="" data-original-title="Add to Cart" tabindex="0"><i class="icofont-cart-alt"></i></a></li>
-														<li><a class="grid_wishlist" href="wishlist.html" title="" data-original-title="Wishlist" tabindex="0"><i class="icofont-heart-alt"></i></a></li>	
-														<li>
-															<a class="grid_qview" href="#" data-toggle="modal" data-target="#myModal" title="" data-original-title="Quick View" tabindex="0"><i class="icofont-search"></i></a>
-														</li>	
+													<li><a class="grid_cart" href="cart.html" title="" data-original-title="Add to Cart" tabindex="0"><i class="icofont-cart-alt"></i></a></li>	
 													</ul>
 
 													</div>
@@ -258,26 +252,21 @@
 														</a>
 													</div>
 													<div class="small-list-content">
-													<h3 class="small-list-title"> <a href="single-product.html">Small Product Title Here</a></h3>
+													<h3 class="small-list-title"> <a href="single-product.html">Correa con diseño</a></h3>
 													<p class="small-list-price">
-														<span class="regular-price">$170.00</span>
+														<span class="regular-price">$4.990</span>
 													</p>
 															
 													<div class="product-rating">
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rate-blank"></i>
 													</div>
 															
 													<ul class="small-list-icons">
-														<li><a class="grid_compare" href="compare.html" title="" data-original-title="Compare" tabindex="0"><i class="icofont-random"></i></a></li>
 														<li><a class="grid_cart" href="cart.html" title="" data-original-title="Add to Cart" tabindex="0"><i class="icofont-cart-alt"></i></a></li>
-														<li><a class="grid_wishlist" href="wishlist.html" title="" data-original-title="Wishlist" tabindex="0"><i class="icofont-heart-alt"></i></a></li>	
-														<li>
-															<a class="grid_qview" href="#" data-toggle="modal" data-target="#myModal" title="" data-original-title="Quick View" tabindex="0"><i class="icofont-search"></i></a>
-														</li>	
 													</ul>
 															
 															
@@ -315,7 +304,7 @@
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rate-blank"></i>
 													</div>
 															
@@ -345,7 +334,7 @@
 													<div class="product-rating">
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rating"></i>
+														<i class="icofont-ui-rate-blank"></i>
 														<i class="icofont-ui-rate-blank"></i>
 														<i class="icofont-ui-rate-blank"></i>
 													</div>
@@ -375,7 +364,7 @@
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rate-blank"></i>
 													</div>
 															
@@ -447,8 +436,8 @@
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
+														<i class="icofont-ui-rating"></i>
 													</div>
 															
 													<ul class="small-list-icons">
@@ -476,8 +465,8 @@
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
 														<i class="icofont-ui-rating"></i>
-														<i class="icofont-ui-rate-blank"></i>
-														<i class="icofont-ui-rate-blank"></i>
+														<i class="icofont-ui-rating"></i>
+														<i class="icofont-ui-rating"></i>
 													</div>
 															
 													<ul class="small-list-icons">
