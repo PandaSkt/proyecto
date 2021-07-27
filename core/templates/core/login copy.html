@@ -1,0 +1,12 @@
+{% load static %}
+
+{% block content %}
+<h2>Nuevo Usuario.</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="error" role="alert" class="alert alert-danger"></div>
+    </form>
+{% endblock %}

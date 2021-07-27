@@ -175,27 +175,16 @@
 				   
                         <div class="login-form">
 						<h3 class="login-header">Iniciar sesion</h3>
-                            <form>
-                                <div class="form-group row">
-                                    <label for="email" class="col-sm-3 col-form-label">Correo</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" id="email" placeholder="Correo">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-3 col-form-label">Contraseña</label>
-                                    <div class="col-sm-7">
-                                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
-                                    </div>
-                                </div>
-								<div class="register-box">
-                                    <button type="submit" class="login-btn float-right">Iniciar sesion</button>
-                                </div>
-                                <div class="login-footer text-center">
-                                    <p>¿No tienes cuenta? <a href="{% url 'register'%}"> Crear cuenta</a></p>
-                                </div>
-								
+                        {% block content %}
+                        <h2>Nuevo Usuario.</h2>
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                {{ form.as_table }}
+                                <button type="reset" class="btn btn-secondary">Limpiar</button>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <div class="error" role="alert" class="alert alert-danger"></div>
                             </form>
+                        {% endblock %}
                         </div>
                    </div>
                </div>

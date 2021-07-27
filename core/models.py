@@ -9,11 +9,9 @@ class Categoria(models.Model):
     def __str__(self):
         return self.nombreCategoria
 
-class Vehiculo(models.Model):
-    patente = models.CharField(max_length=6, primary_key=True)
-    marca = models.CharField(max_length=20)
-    modelo = models.CharField(max_length=20, null=True, blank=True)
-    categoria =models.ForeignKey(Categoria, on_delete=models.CASCADE)
+class Login(models.Model):
+    correo = models.CharField(max_length=40, primary_key=True)
+    contraseña = models.CharField(max_length=20)
     
     def __str__(self):
-        return self.patente
+        return self.correo

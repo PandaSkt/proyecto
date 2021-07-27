@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Login
+from .forms import LoginForm
 
 # Create your views here.
 def index(request):
@@ -14,7 +16,8 @@ def contact(request):
     return render(request, 'core/contact.html')
 
 def login(request):
-    return render(request, 'core/login.html')
+    form = LoginForm()
+    return render(request, 'core/login.html', {'form':form})
 
 def register(request):
     return render(request, 'core/register.html')
