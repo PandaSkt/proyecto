@@ -27,11 +27,15 @@ def contact(request):
     return render(request, 'core/contact.html', data)
 
 def login(request):
-
-    return render(request, 'core/registration/login.html')
+    datos ={
+        'form': LoginForm()
+    }
+    return render(request, 'core/login.html', datos)
 
 def register(request):
-    datos = {}
+    datos = {
+        'form': RegistroForm()
+    }
     if request.method == 'POST':
         formulario = RegistroForm(request.POST)
         if formulario.is_valid:
@@ -40,4 +44,4 @@ def register(request):
             datos['mensaje'] = "Datos grabados!"
     else:
         datos['form'] = RegistroForm()
-    return render(request, 'core/registration/register.html', datos)
+    return render(request, 'core/register.html', datos)

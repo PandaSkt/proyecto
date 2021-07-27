@@ -8,12 +8,20 @@ class RegistroForm(ModelForm):
     class Meta:
         model = Registro
         fields= ['nombre', 'correo', 'contraseña']
+        widgets={
+            'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+            'correo': forms.EmailInput(attrs={'class': 'form-control'}),
+            'contraseña': forms.PasswordInput(attrs={'class': 'form-control'}),
+        }
 
 class LoginForm(ModelForm):
     class Meta:
         model = Login
         fields= ['correo', 'contraseña']
-
+        widgets={
+            'correo': forms.EmailInput(attrs={'class': 'form-control'}),
+            'contraseña': forms.PasswordInput(attrs={'class': 'form-control'}),
+        }
 
 class ContactoForm(ModelForm):
     class Meta:

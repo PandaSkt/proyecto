@@ -95,10 +95,10 @@
                         <div class="register-form login-form clearfix">
 						<h3 class="login-header">Crear cuenta </h3>
 						{% block content %}
-                        <h2>Nuevo Usuario.</h2>
+
                             <form action="" method="POST">
                                 {% csrf_token %}
-                                {{ form.as_table }}
+                                {{ form }}
 								<div class="register-box">
                                     <button type="reset" class="btn btn-secondary">Limpiar</button>
                                     <button type="submit" class="btn btn-primary">Registrar</button>
