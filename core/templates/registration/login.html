@@ -1,4 +1,5 @@
 {% load static%}
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -7,7 +8,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
     <link rel="shortcut icon" href="{% static 'core/img/favicon.png' %}">
 
     <link rel="stylesheet" href="{% static 'core/css/icofont.css' %}">
@@ -87,10 +87,20 @@
             <div class="container">
               
                <div class="row">
-                   <div class="col-xl-6 col-lg-8 offset-xl-3 offset-lg-2">
-						<div class="card">
-							<div class="card-body">
+				<div class="offset-xl-1 col-xl-10">
+					<div class="register-form login-form clearfix">
 								<h3 class="login-header">Iniciar sesion</h3>
+								
+
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                {{ form }}
+								<br>
+                                    <button type="submit" class="btn btn-primary">ingresar</button>
+									<div class="error" role="alert" class="alert alert-danger"></div>
+								
+                            </form>
+					</div>
 							</div>
 						</div>
                    </div>

@@ -13,7 +13,7 @@ class Registro(models.Model):
 
 class Login(models.Model):
     correo = models.ForeignKey(Registro, on_delete=models.PROTECT)
-    contraseña = models.CharField(max_length=20)
+    clave = models.CharField(max_length=10)
 
     def __str__ (self):
         return self.correo

@@ -17,11 +17,8 @@ class RegistroForm(ModelForm):
 class LoginForm(ModelForm):
     class Meta:
         model = Login
-        fields= ['correo', 'contraseña']
-        widgets={
-            'correo': forms.EmailInput(attrs={'class': 'form-control'}),
-            'contraseña': forms.PasswordInput(attrs={'class': 'form-control'}),
-        }
+        fields= ['correo', 'clave']
+        
 
 class ContactoForm(ModelForm):
     class Meta:
