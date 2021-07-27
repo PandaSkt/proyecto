@@ -44,4 +44,4 @@ def register(request):
             datos['mensaje'] = "Datos grabados!"
     else:
         datos['form'] = RegistroForm()
-    return render(request, 'core/register.html', datos)
+    return render(request, 'register.html', datos)
