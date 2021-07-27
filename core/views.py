@@ -30,7 +30,7 @@ def login(request):
     datos ={
         'form': LoginForm()
     }
-    return render(request, 'core/ingresar.html', datos)
+    return render(request, 'core/login.html', datos)
 
 def register(request):
     datos = {
