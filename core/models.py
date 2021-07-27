@@ -11,10 +11,7 @@ class Categoria(models.Model):
 
 class Login(models.Model):
     correo = models.CharField(max_length=40, primary_key=True)
-    contraseña = models.CharField(widget=models.PasswordInput)
-    widgets = {
-        'password': models.PasswordInput(),
-    }
+    contraseña = models.CharField(max_length=20)
     
     def __str__(self):
         return self.correo

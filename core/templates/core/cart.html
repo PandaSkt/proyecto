@@ -1,393 +1,325 @@
-{% load static %}
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home || animart pet shop, pet shitter, pet food, pet care Bootstrap 4 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="{% static 'core/img/favicon.png' %}">
-	<!-- icofont css -->
-    <link rel="stylesheet" href="{% static 'core/css/icofont.css' %}">
-    <!-- Animate css -->
-    <link rel="stylesheet" href="{% static 'core/css/animate.css' %}">
-    <!-- Nice select css -->
-    <link rel="stylesheet" href="{% static 'core/css/nice-select.css' %}">
-    <!-- Jquery fancybox css -->
-    <link rel="stylesheet" href="{% static 'core/css/jquery.fancybox.css' %}">
-    <!-- Jquery ui price slider css -->
-    <link rel="stylesheet" href="{% static 'core/css/jquery-ui.min.css' %}">
-    <!-- Meanmenu css -->
-    <link rel="stylesheet" href="{% static 'core/css/meanmenu.min.css' %}">
-	<!-- Slick carousel css -->
-    <link rel="stylesheet" href="{% static 'core/css/slick-slider.css' %}">
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
-    <!-- Custom css -->
-    <link rel="stylesheet" href="{% static 'core/css/default.css' %}">
-	<!-- Plugins css -->
-    <link rel="stylesheet" href="{% static 'core/css/plugins.css' %}">
-    <!-- Main css -->
-    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="{% static 'core/css/responsive.css' %}">
-    
-
-    <!-- Modernizer js -->
-    <script src="{% static 'core/js/vendor/modernizr-3.5.0.min.js'%}"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda</title>
+</head>
 <body>
-    <div class="wrapper">
-	
-		
-        <!-- Header Area Start Here -->
-        <header class="header-area header-style-four header-sticky">
-            <div class="container">
 
-                <div class="row align-items-center">
-                    <!-- Logo Start -->
-                    <div class="col-xl-2 col-lg-2 col-6">
-                        <div class="logo">
-                            <a href="{% url 'index' %}">
-                                <img src="{% static 'core/img/logo/logo2.png'%}" alt="logo-image">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Logo End -->
-   
-					<div class="col-xl-8 col-lg-8 d-none d-lg-block">
-                        <nav>
-                            <ul class="header-menu-list text-center">
-                                <li><a href="{% url 'index' %}">Inicio</a></li>
-								<li><a href="{% url 'shop'%}">Tienda</a></li>							
-                                <li><a href="{% url 'about'%}">Nosotros</a></li>
-								<li><a href="{% url 'contact'%}">Contactanos</a></li>
-								<li><a href="{% url 'login'%}">Iniciar Sesion</a></li>
-								<li><a href="{% url 'register'%}">Registrar</a></li>
-                            </ul>
-						</nav>
-                    </div>
-   
-                    <!-- Cart Box Start Here -->
-                    <div class="col-xl-2 col-lg-2 col-6">
-                        <div class="cart-box">
-                            <ul>
-
-                                <li class="drodown-show">
-                                    <a href="{% url 'cart' %}"><span class="icofont-cart-alt"></span><span class="total-pro">2</span></a>
-                                    <ul class="dropdown cart-box-width">
-                                            <li>
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#">
-                                                            <img src="img/products/p1.jpg" alt="cart-image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6>
-                                                            <a href="product-details.html">Product Title Here 1</a>
-                                                        </h6>
-														<span>M, Red</span>
-                                                        <span class="cart-price">35.00 x 1</span>  
-                                                    </div>
-                                                    <a class="del-icone" href="#">
-                                                        <i class="ion-close"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Box Start -->
-                                                <div class="single-cart-box">
-                                                    <div class="cart-img">
-                                                        <a href="#">
-                                                            <img src="img/products/p2.jpg" alt="cart-image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart-content">
-                                                        <h6>
-                                                            <a href="product-details.html">Product Title Here 2</a>
-                                                        </h6>
-														<span>L, White</span>
-                                                        <span class="cart-price">22.00 x 1</span>
-                                                    </div>
-                                                    <a class="del-icone" href="#">
-                                                        <i class="ion-close"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Cart Box End -->
-                                                <!-- Cart Footer Inner Start -->
-                                                <div class="cart-footer">
-                                                    <ul class="price-content">
-                                                        <li>Subtotal
-                                                            <span>$85.00</span>
-                                                        </li>
-                                                        <li>Shipping
-                                                            <span>$5.50</span>
-                                                        </li>
-                                                        <li>Total
-                                                            <span>$90.50</span>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="cart-actions text-center">
-                                                        <a class="cart-checkout" href="checkout.html">Checkout</a>
-                                                        <a class="cart-checkout" href="cart.html">View Cart</a>
-                                                    </div>
-                                                </div>
-                                                <!-- Cart Footer Inner End -->
-                                            </li>
-                                        </ul>
-                                </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Cart Box End Here -->
-                </div>
-				<!-- Row End -->
-				
-                <!-- Mobile Menu Start Here -->
-                <div class="mobile-menu d-block d-lg-none">
-                    <nav>
-                        <ul class="header-menu-list text-center">
-                            <li><a href="{% url 'index' %}">Inicio</a></li>
-                            <li><a href="{% url 'shop'%}">Tienda</a></li>							
-                            <li><a href="{% url 'about'%}">Nosotros</a></li>
-                            <li><a href="{% url 'contact'%}">Contactanos</a></li>
-                            <li><a href="{% url 'login'%}">Iniciar Sesion</a></li>
-                            <li><a href="{% url 'register'%}">Registrar</a></li>
-                        </ul>
-                    </nav>
-                </div>
-				<!-- Mobile Menu End Here -->
-
-            </div>
-            <!-- Container End -->
-        </header>
-        <!-- Header Area End Here -->
-
-
-        <!-- Cart Main Area Start -->
-        <div class="cart-main-area adp_top adp_bottom">
-            <div class="container">
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="text-center">TIENDA</h1>
+            <hr>
+        </div>
+    </header>
+    <!-- START SECTION STORE -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <!-- Form Start -->
-                        <form action="#">
-                            <!-- Table Content Start -->
-                            <div class="table-content table-responsive">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th class="product-thumbnail">Image</th>
-                                            <th class="product-name">Item Name</th>
-                                            <th class="product-price">Price</th>
-                                            <th class="product-quantity">Quantity</th>
-                                            <th class="product-subtotal">Total</th>
-                                            <th class="product-remove">Remove</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src="img/products/p1.jpg" alt="cart-image" /></a>
-                                            </td>
-                                            <td class="product-name"><a href="product-details.html">Product Title Here 1</a></td>
-                                            <td class="product-price"><span class="amount">$215.00</span></td>
-                                            <td class="product-quantity"><input type="number" min="1" value="1" /></td>
-                                            <td class="product-subtotal">$105.00</td>
-                                            <td class="product-remove"> <a href="#"><i class="icofont-delete-alt"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="product-thumbnail">
-                                                <a href="#"><img src="img/products/p2.jpg" alt="cart-image" /></a>
-                                            </td>
-                                            <td class="product-name"><a href="product-details.html">Product Title Here 2</a></td>
-                                            <td class="product-price"><span class="amount">$100.00</span></td>
-                                            <td class="product-quantity"><input type="number" min="1" value="1" /></td>
-                                            <td class="product-subtotal">$150.00</td>
-                                            <td class="product-remove"> <a href="#"><i class="icofont-delete-alt"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Azul</h3>
+                            <img class="item-image" src="./img/pokemon-azul.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$9990</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
-                            <!-- Table Content Start -->
-                            <div class="row cart_bottom_wrapper">
-							
-                               <!-- Cart Button Start -->
-                                <div class="col-md-8 col-sm-12">
-                                    <div class="buttons-cart">
-                                        <input type="submit" value="Update Cart" />
-                                        <a href="#">Continue Shopping</a>
-                                        <a href="#">Clear Cart</a>
-                                    </div>
-                                </div>
-                                <!-- Cart Button Start -->
-								
-                                <!-- Cart Totals Start -->
-                                <div class="col-md-4 col-sm-12">
-                                    <div class="cart_totals">
-                                        <h2>Cart Totals</h2>
-                                        <br />
-                                        <table>
-                                            <tbody>
-                                                <tr class="cart-subtotal">
-                                                    <th>Subtotal</th>
-                                                    <td><span class="amount">$315.00</span></td>
-                                                </tr>
-                                                <tr class="cart-subtotal">
-                                                    <th>Shipping</th>
-                                                    <td><span class="amount">$10.00</span></td>
-                                                </tr>
-                                                <tr class="order-total">
-                                                    <th>Total</th>
-                                                    <td>
-                                                        <strong><span class="amount">$325.00</span></strong>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="wc-proceed-to-checkout">
-                                            <a href="#">Proceed to Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Cart Totals End -->
-								
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Rojo</h3>
+
+                            <img class="item-image" src="./img/pokemon-rojo.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$9990S</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
-                            <!-- Row End -->
-                        </form>
-                        <!-- Form End -->
+                        </div>
                     </div>
                 </div>
-                 <!-- Row End -->
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Verde</h3>
+
+                            <img class="item-image" src="./img/pokemon-verde.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$9990</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Plata</h3>
+
+                            <img class="item-image" src="./img/pokemon-plata.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">$29990</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Oro</h3>
+
+                            <img class="item-image" src="./img/pokemon-oro.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$29990</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Sonic</h3>
+
+                            <img class="item-image" src="./img/sonic.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">$19900</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Cart Main Area End -->
+    </section>
+    <!-- END SECTION STORE -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total </p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
 
 
+        </div>
 
-		<!-- Footer Area Start Here -->
-        <footer>
-            <div class="footer_area_wrapper footer_color_bg" style="background-color:#361d1d">
-                <div class="container">
-                    <!-- Footer Middle Start -->
-                    <div class="footer-top adp_top adp_bottom">
-                        <div class="row">
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="footer_area_wrapper footer_color_bg" style="background-color:#361d1d">
+            <div class="container">
+                <!-- Footer Middle Start -->
+                <div class="footer-top adp_top adp_bottom">
+                    <div class="row">
+                    
+                        <!-- Single Footer Start -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer_widget">
+                                <h4 class="footer-title">Contactanos</h4>
+                                <div class="footer-content">
+                                    <ul class="footer_contact">
+                                        <li><i class="icofont-home"></i><span>Direccion :</span>  Aromo 2209</li>
+                                        <li><i class="icofont-ui-dial-phone"></i><span>Celular :</span> +569 48573573</li>
+                                        <li><i class="icofont-email"></i><span>Correo :</span> alanbrito.store@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Footer Start -->
                         
-                            <!-- Single Footer Start -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="footer_widget">
-                                    <h4 class="footer-title">Contactanos</h4>
+                        <!-- Single Footer Start -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="footer_widget">
+                                    <h4 class="footer-title">Infomacion</h4>
                                     <div class="footer-content">
-                                        <ul class="footer_contact">
-                                            <li><i class="icofont-home"></i><span>Direccion :</span>  Aromo 2209</li>
-                                            <li><i class="icofont-ui-dial-phone"></i><span>Celular :</span> +569 48573573</li>
-                                            <li><i class="icofont-email"></i><span>Correo :</span> alanbrito.store@gmail.com</li>
+                                        <ul class="footer-list">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                            <li><a href="">Privacy Policy</a></li>
+                                            <li><a href="">Terms & Conditions</a></li>
+                                            <li><a href="">Shipping Policies</a></li>
+                                            <li><a href="">Term & Conditions</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Single Footer Start -->
-                            
-                            <!-- Single Footer Start -->
-                            <div class="col-lg-2 col-md-6">
-                                <div class="footer_widget">
-                                        <h4 class="footer-title">Infomacion</h4>
-                                        <div class="footer-content">
-                                            <ul class="footer-list">
-                                                <li><a href="">About Us</a></li>
-                                                <li><a href="">Contact Us</a></li>
-                                                <li><a href="">Privacy Policy</a></li>
-                                                <li><a href="">Terms & Conditions</a></li>
-                                                <li><a href="">Shipping Policies</a></li>
-                                                <li><a href="">Term & Conditions</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                            </div>
-                            <!-- Single Footer Start -->
-                            
-                            <!-- Single Footer Start -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer_widget">
-                                        <h4 class="footer-title">Instagram Gallery</h4>
-                                        <div class="footer-content">
-                                           <ul class="instagram-img">
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_1.jpg"><img src="img/portfolio/inst_port_1.jpg" alt="instagram-img"></a></li>
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_2.jpg"><img src="img/portfolio/inst_port_2.jpg" alt="instagram-img"></a></li>
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_3.jpg"><img src="img/portfolio/inst_port_3.jpg" alt="instagram-img"></a></li>
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_4.jpg"><img src="img/portfolio/inst_port_4.jpg" alt="instagram-img"></a></li>
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_5.jpg"><img src="img/portfolio/inst_port_5.jpg" alt="instagram-img"></a></li>
-                                               <li><a class="img-popup" href="img/portfolio/inst_port_6.jpg"><img src="img/portfolio/inst_port_6.jpg" alt="instagram-img"></a></li>
-                                           </ul>  
-                                        </div>
-                                    </div>
-                                </div>
-                            <!-- Single Footer Start -->
-                            
-                            <!-- Single Footer Start -->
-                            <!-- Single Footer Start -->
-                            
                         </div>
-                        <!-- Row End -->
+                        <!-- Single Footer Start -->
+                        
+                        <!-- Single Footer Start -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer_widget">
+                                    <h4 class="footer-title">Instagram Gallery</h4>
+                                    <div class="footer-content">
+                                       <ul class="instagram-img">
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_1.jpg"><img src="img/portfolio/inst_port_1.jpg" alt="instagram-img"></a></li>
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_2.jpg"><img src="img/portfolio/inst_port_2.jpg" alt="instagram-img"></a></li>
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_3.jpg"><img src="img/portfolio/inst_port_3.jpg" alt="instagram-img"></a></li>
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_4.jpg"><img src="img/portfolio/inst_port_4.jpg" alt="instagram-img"></a></li>
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_5.jpg"><img src="img/portfolio/inst_port_5.jpg" alt="instagram-img"></a></li>
+                                           <li><a class="img-popup" href="img/portfolio/inst_port_6.jpg"><img src="img/portfolio/inst_port_6.jpg" alt="instagram-img"></a></li>
+                                       </ul>  
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Single Footer Start -->
+                        
+                        <!-- Single Footer Start -->
+                        <!-- Single Footer Start -->
+                        
                     </div>
-                    <!-- Footer Middle End -->
+                    <!-- Row End -->
                 </div>
-                <!-- Footer Bottom Start -->
-                <div class="footer-bottom ">
-                   <div class="container">
-                       <div class="row align-items-center">
-                           <div class="col-md-4">
-                               <div class="footer-copyright ">
-                                    <p>Copyright @ <a href="#">Animart </a> All Rights Reserved</p>
-                                </div>
-                           </div>
-    
-                           <div class="col-md-4">
-                               <div class="footer-bottom-right text-center">
-                                    <ul class="footer-social-icon ">
-                                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icofont-brand-youtube"></i></a></li>
-                                        <li><a href="#"><i class="icofont-google-plus"></i></a></li>
-                                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                    </ul>
-                                </div>
-                           </div>
+                <!-- Footer Middle End -->
+            </div>
+            <!-- Footer Bottom Start -->
+            <div class="footer-bottom ">
+               <div class="container">
+                   <div class="row align-items-center">
+                       <div class="col-md-4">
+                           <div class="footer-copyright ">
+                                <p>Copyright @ <a href="#">Animart </a> All Rights Reserved</p>
+                            </div>
+                       </div>
+
+                       <div class="col-md-4">
+                           <div class="footer-bottom-right text-center">
+                                <ul class="footer-social-icon ">
+                                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icofont-brand-youtube"></i></a></li>
+                                    <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                </ul>
+                            </div>
                        </div>
                    </div>
-                </div>
-                <!-- Footer Bottom End -->
+               </div>
             </div>
-        </footer>
-        <!-- Footer Area End Here -->
-
-    </div>
-    <!-- Main Wrapper End Here -->
-
- <!-- jquery 3.3.1 -->
- <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
- <!-- Mobile menu js -->
- <script src="{% static 'core/js/jquery.meanmenu.min.js' %}"></script>
- <!-- ScrollUp js -->
- <script src="{% static 'core/js/jquery.scrollUp.js' %}"></script>
- <!-- Jquery nice select js -->
- <script src="{% static 'core/js/jquery.nice-select.min.js' %}"></script>
- <!-- Jquery ui price slider js -->
- <script src="{% static 'core/js/jquery-ui.min.js'%}"></script>
- <!-- Bootstrap popper js -->
- <script src="{% static 'core/js/popper.min.js' %}"></script>
- <!-- Bootstrap js -->
- <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
- <!-- Plugin js -->
- <script src="{% static 'core/js/plugin.js' %}"></script>
- <!-- Main activaion js -->
- <script src="{% static 'core/js/main.js' %}"></script>
+        </div>
+    </footer>
 
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="{% static 'core/js/tienda.js%}"></script>
+
+	<script src="{% static 'core/js/carrito.js'%}"></script>
+
+    <script src="{% static 'core/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- Mobile menu js -->
+    <script src="{% static 'core/js/jquery.meanmenu.min.js' %}"></script>
+    <!-- ScrollUp js -->
+    <script src="{% static 'core/js/jquery.scrollUp.js' %}"></script>
+    <!-- Jquery nice select js -->
+    <script src="{% static 'core/js/jquery.nice-select.min.js' %}"></script>
+    <!-- Jquery ui price slider js -->
+    <script src="{% static 'core/js/jquery-ui.min.js'%}"></script>
+    <!-- Bootstrap popper js -->
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <!-- Plugin js -->
+    <script src="{% static 'core/js/plugin.js' %}"></script>
+    <!-- Main activaion js -->
+    <script src="{% static 'core/js/main.js' %}"></script>
 	
+</body>
 </body>
 
 </html>
