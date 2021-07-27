@@ -1,6 +1,6 @@
+from core import forms
 from django.shortcuts import render
-from .models import Login
-from .forms import LoginForm
+from .forms import *
 
 # Create your views here.
 def index(request):
@@ -13,14 +13,31 @@ def about(request):
     return render(request, 'core/about.html')
 
 def contact(request):
-    return render(request, 'core/contact.html')
+    data = {
+        'form': ContactoForm()
+    }
+    if request.method == 'POST':
+        formulario = ContactoForm(request.POST)
+        if formulario.is_valid:
+            formulario.save()
+            data['form'] = formulario
+            data['mensaje'] = "Se envio el Formulario!"
+        else:
+            data['form'] = ContactoForm()
+    return render(request, 'core/contact.html', data)
 
 def login(request):
-    form = LoginForm()
-    return render(request, 'core/login.html', {'form':form})
+
+    return render(request, 'core/registration/login.html')
 
 def register(request):
-    return render(request, 'core/register.html')
-
-def cart(request):
-    return render(request, 'core/cart.html')
+    datos = {}
+    if request.method == 'POST':
+        formulario = RegistroForm(request.POST)
+        if formulario.is_valid:
+            formulario.save()
+            datos['form'] = formulario
+            datos['mensaje'] = "Datos grabados!"
+    else:
+        datos['form'] = RegistroForm()
+    return render(request, 'core/registration/register.html', datos)

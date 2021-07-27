@@ -81,9 +81,9 @@ DATABASES = {
 
         'NAME': '127.0.0.1:1521/xe',
 
-        'USER': 'django002D',
+        'USER': 'brayan',
 
-        'PASSWORD': '123456',
+        'PASSWORD': '1659',
 
     }
 }

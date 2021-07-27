@@ -1,7 +1,8 @@
-from core.models import Categoria
 from django.contrib import admin
-from .models import Categoria, Login
+from .models import *
 
 # Register your models here.
-admin.site.register(Categoria)
+
+admin.site.register(Registro)
 admin.site.register(Login)
+admin.site.register(Contacto)
