@@ -99,13 +99,10 @@
                             <form action="" method="POST">
                                 {% csrf_token %}
                                 {{ form }}
-								<br>
 								<div class="register-box">
                                     <button type="reset" class="btn btn-secondary">Limpiar</button>
                                     <button type="submit" class="btn btn-primary">Registrar</button>
 									<div class="error" role="alert" class="alert alert-danger"></div>
-
-									{{mensaje}}
 								</div> 
                             </form>
                         {% endblock %}
