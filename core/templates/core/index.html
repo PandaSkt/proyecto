@@ -47,9 +47,22 @@
 								<li><a href="{% url 'shop'%}">Tienda</a></li>							
                                 <li><a href="{% url 'about'%}">Nosotros</a></li>
 								<li><a href="{% url 'contact'%}">Contactanos</a></li>
-								<li><a href="{% url 'login'%}">Iniciar Sesion</a></li>
-								<li><a href="{% url 'register'%}">Registrar</a></li>
-                            </ul>
+								
+								
+                            {% if user.is_authenticated %}
+							<li>
+								<a href="{% url 'logout'%}">Cerrar sesion</a>
+							</li>
+							<li>
+								<a href="#">@{{ user.username}}</a>
+							</li>
+							{% else %}
+							<li><a href="{% url 'register'%}">Registrar</a></li>
+							<li>
+								<a href="{% url 'login'%}">Iniciar sesion</a>
+							</li>
+							{% endif %}
+							</ul>
 						</nav>
                     </div>
    
