@@ -91,15 +91,6 @@
 						<div class="card">
 							<div class="card-body">
 								<h3 class="login-header">Iniciar sesion</h3>
-								{% block content %}
-									<form action="" method="POST">
-										{% csrf_token %}
-										{{ form }}
-										<button type="reset" class="btn btn-secondary">Limpiar</button>
-										<button type="submit" class="btn btn-primary">Enviar</button>
-										<div class="error" role="alert" class="alert alert-danger"></div>
-									</form>
-								{% endblock %}
 							</div>
 						</div>
                    </div>
